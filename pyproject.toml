@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bookmark-manager"
+version = "0.1.0"
+description = "A bookmark management CLI with import/export and link checking."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Xu Jiaqi", email = "jiaqixu12138@gmail.com" }]
+dependencies = ["click>=8.0.0", "rich>=13.0.0", "requests>=2.28.0"]
+
+[project.scripts]
+bookmark-manager = "bookmark_manager.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Master-626/bookmark-manager"
